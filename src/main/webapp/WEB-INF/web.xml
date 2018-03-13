@@ -8,6 +8,6 @@
         version="3.1">
   <display-name>Titanic Hotel</display-name>
   <welcome-file-list>
-    <welcome-file>View/index2.jsp</welcome-file>
+    <welcome-file>main/webapp/View/index2.jsp</welcome-file>
   </welcome-file-list>
 </web-app>
