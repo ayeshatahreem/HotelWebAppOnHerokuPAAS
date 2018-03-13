@@ -7,6 +7,9 @@
   <version>1.0-SNAPSHOT</version>
   <name>webappRunnerSample Maven Webapp</name>
   <url>http://maven.apache.org</url>
+    <properties>
+        <tomcat.version>9.0.6</tomcat.version>
+    </properties>
 
   <dependencies>
     <dependency>
@@ -15,6 +18,31 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+      <dependency>
+          <groupId>org.apache.tomcat.embed</groupId>
+          <artifactId>tomcat-embed-core</artifactId>
+          <version>${tomcat.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.tomcat.embed</groupId>
+          <artifactId>tomcat-embed-jasper</artifactId>
+          <version>${tomcat.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.tomcat</groupId>
+          <artifactId>tomcat-jasper</artifactId>
+          <version>${tomcat.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.tomcat</groupId>
+          <artifactId>tomcat-jasper-el</artifactId>
+          <version>${tomcat.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.tomcat</groupId>
+          <artifactId>tomcat-jsp-api</artifactId>
+          <version>${tomcat.version}</version>
+      </dependency>
   </dependencies>
   <build>
     <finalName>webappRunnerSample</finalName>
@@ -23,6 +51,15 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
             <version>2.3</version>
+            <configuration>
+                <assembleDirectory>target</assembleDirectory>
+                <programs>
+                    <program>
+                        <mainClass>launch.Main</mainClass>
+                        <name>webapp</name>
+                    </program>
+                </programs>
+            </configuration>
             <executions>
                 <execution>
                     <phase>package</phase>
