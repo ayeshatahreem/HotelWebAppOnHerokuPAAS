@@ -6,6 +6,22 @@
         <element id="directory" name="classes">
           <element id="module-output" name="newproject" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-jasper:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.6" />
+          <element id="library" level="project" name="Maven: org.eclipse.jdt:ecj:3.12.3" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jasper:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-api:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util-scan:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-util:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jasper-el:9.0.6" />
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-jsp-api:9.0.6" />
+        </element>
       </element>
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/webappRunnerSample/META-INF/MANIFEST.MF" />
