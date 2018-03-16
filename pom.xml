@@ -53,12 +53,6 @@
               <version>2.0.0</version>
               <configuration>
                   <assembleDirectory>target</assembleDirectory>
-                  <programs>
-                      <program>
-                          <mainClass>launch.Main</mainClass>
-                          <name>webapp</name>
-                      </program>
-                  </programs>
               </configuration>
               <executions>
                   <execution>
