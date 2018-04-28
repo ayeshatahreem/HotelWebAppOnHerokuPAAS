@@ -14,10 +14,9 @@ import java.io.IOException;
 )
 public class TestServlet extends HttpServlet {
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         ServletOutputStream out = resp.getOutputStream();
-        out.write("hello heroku".getBytes());
+        out.write("Hello Ayesha!".getBytes());
         out.flush();
         out.close();
     }
